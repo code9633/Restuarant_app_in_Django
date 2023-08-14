@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Html File</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}"/>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+
+    <div class="main-div">
+        <img  id="main-img" src="{% static 'blog/images/main-image.jpg' %}" alt="">
+    </div>
+
+    <div style="padding-inline: 10%;">
+        <div class="card">
+            <img src="{% static 'blog/images/1.jpg' %}" alt="">
+            <h4>Delicious</h4>
+            <p><a href="./menu">Menu</a></p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'blog/images/2.jpg' %}" alt="">
+            <h4>Delicious</h4>
+            <p><a href="./specials">Specials</a></p>
+        </div>
+
+        <div class="card">
+            <img src="{% static 'blog/images/3.jpg' %}" alt="">
+            <h4>Delicious</h4>
+            <p><a href="./meals">Meals</a></p>
+        </div>
+
+    </div>
+
+    
+
+    <footer>
+        <div class="footer-div">
+            <p>Time</p>
+            Lunch is served at <span style="color:rgb(176,176,176);font-style: italic"> 2.00PM to 7.00PM</span>
+            <br><br>
+
+            20 different branches acess the country
+            <br>
+        </div>
+
+        <div class="footer-div">
+           <p>Testimonials</p>
+           "This is the best restaurant I have ever been to "
+           <br><br>
+
+           "They serve ourstanding pizaa!"
+        </div>
+
+        <div class="footer-div">
+            <p>Testimonials</p>
+            "This is the best restaurant I have ever been to "
+            <br><br>
+ 
+            "They serve ourstanding pizaa!"
+         </div> 
+    </footer>
+</body>
+</html>
